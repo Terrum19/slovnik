@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- Flet specific -->
-  <meta name="flet-route-url-strategy" content="hash">
+  <meta name="flet-route-url-strategy" content="path">
   <meta name="flet-web-pyodide" content="true">
   <meta name="flet-websocket-endpoint-path" content="/ws">
 
@@ -30,7 +30,7 @@
     var useColorEmoji = false;
   </script>
 
-  <script>webRenderer="html";</script>
+  <script>webRenderer="canvaskit";</script>
   <script>useColorEmoji=false;</script>
 
   
@@ -48,11 +48,6 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
-
-<script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 
 <body>
   <div id="loading">
